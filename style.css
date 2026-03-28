@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: aliceblue;
+}
+
+#header {
+    height: 500px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #000000;
+}
+
+.logo {
+    height: 400px;
+    width: auto;margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+
+main{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.core-team{
+    width: 200px;
+    height: 300px;
+    background: rgb(0, 0, 0);
+    flex-shrink: 0;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    color: rgb(43, 186, 230);
+    transition: transform 0.3s ease;
+}
+
+.core-team:hover{
+   transform: scale(1.1);
+} 
+
+.divide-team{
+    display: flex;
+    gap: 80px;
+    margin: 0 auto;
+    padding: 20px;
+    width: fit-content;
+}
+
+.mm img{
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.mm img:hover{
+    box-shadow: 0px 0px 15px 0px rgb(255, 142, 142);
+}
+.mm {
+    text-align: center;
+    font-size: 10px;
+}
+
+.abt {
+    height: 500px;
+    width: 100%;
+    background-color: #000000;
+}
+
+.use {
+    height: 300px;
+    width: 100%;
+    background-color: #000000;
+    text-align : center;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin : 10px;
+}
+
+video {
+    height: 300px;
+    width: 500px;
+    text-align : center;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin : auto auto;
+}
+
+.ad-container {
+    text-align: center;
+}
+
+.abt-content {
+    display: flex;
+}
+
+.abt-img {
+    height: 400px;
+    width: 35%;
+}
+
+.abt-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.abt-text {
+    width: 65%;
+    padding: 30px;
+}
+
+b {
+    color: red;
+}
+
+.certification-block{
+    width: 100%;
+    overflow: hidden;
+}
+
+.certification-block h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.certifications{
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    animation: scrollCert 12s linear infinite;
+}
+
+.certification{
+    width: 200px;
+    height: 356px;
+    background-color: lightgray;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.certification img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* animation */
+@keyframes scrollCert{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+.certifications:hover{
+    animation-play-state: paused;
+}
+
+.all-details {
+    text-align: center;
+    height: 200px;
+    width: 400px;
+    border: white solid 1px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(255, 142, 142);
+    padding: 20px;
+}
+
+.registration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    height: 30px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+label {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: end;
+    width: 45%;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5cff3b;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form {
+    text-align: center;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #0c0505;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.videos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.vid-container {
+    text-align: center;
+    margin: 40px 0;
+}
